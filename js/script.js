@@ -48,7 +48,7 @@ function clearDisplay() {
     currentOperator = '';
 }
 
-// Event listener para o botão de modo escuro
+// botão de modo escuro
 let darkModeToggle = document.getElementById('dark-mode-toggle');
 darkModeToggle.addEventListener('change', function() {
     document.body.classList.toggle('dark-mode');
@@ -61,7 +61,7 @@ darkModeToggle.addEventListener('change', function() {
     }
 });
 
-// Verificar o estado do modo escuro ao carregar a página
+// estado do modo escuro ao carregar a página
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
     darkModeToggle.setAttribute('aria-checked', 'true');
